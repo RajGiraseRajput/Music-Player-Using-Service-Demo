@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         btnStop.setOnClickListener { stopMusicService() }
 
         requestNotificationPermission() // Ask for notification permission
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+//            cardView.setOutlineSpotShadowColor(ContextCompat.getColor(this, R.color.light_green));
+//        }
+
+
     }
 
     private fun startMusicService() {
